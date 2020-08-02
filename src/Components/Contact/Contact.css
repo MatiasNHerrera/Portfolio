@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.cnt-contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cnt-contact-social
+{
+    width: 75%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.contact, .social
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    width: 50%;
+    height: 100%;
+}
+
+.contact
+{
+    background: url('../../Assets/form.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.social
+{
+    background: #fff;
+}
+
+.form-input
+{
+    width: 50%;
+    display: block;
+}
+
+.form-input label
+{
+    display: block;
+    color: ghostwhite;
+}
+
+input, textarea
+{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    text-indent: 10px;
+    color: black;
+    transition: 0.5s;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+textarea
+{
+    text-indent: 0;
+}
+
+.contact .form-input:nth-child(4)
+{
+    height: 30%;
+}
+
+.social div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.social div img
+{
+    width: 18%;
+    cursor: pointer;
+}
+
+.social div span
+{
+    margin-top: 3%;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) and (max-height: 812px)
+{
+    .cnt-contact-social
+    {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .contact, .social
+    {
+        width: 100%;
+    }
+
+    .social
+    {
+        margin-bottom: 20%;
+    }
+
+    .form-input
+    {
+        width: 70%;
+    }
+}

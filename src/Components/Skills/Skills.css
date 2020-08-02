@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cnt-skills
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-c-o, .skills-c-t
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    width: 50%;
+    height: 100%;
+}
+
+.technologies
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.technologies img
+{
+    width: 35%;
+    margin: 15% auto;
+}
+
+.pic-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    11%{
+        opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    bottom: 20%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: display 18s infinite;
+  }
+
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+  img:nth-child(6) {
+    animation-delay: 10s;
+  }
+  img:nth-child(7) {
+    animation-delay: 12s;
+  }
+  img:nth-child(8) {
+    animation-delay: 14s;
+  }
+  img:nth-child(9) {
+    animation-delay: 16s;
+  }
+
+  .aptitudes
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .aptitudes p
+  {
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    margin-top: 3%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .aptitudes span
+  {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(10, 156, 130);
+    margin-left: 3%;
+  }
+
+  @media (max-width: 500px) and (max-height: 812px)
+  {
+
+    .cnt-skills
+    {
+      flex-wrap: wrap;
+      height: 200%;
+    }
+
+    .skills-c-o, .skills-c-t
+    {
+      width: 100%;
+      height: 50%;
+    }
+
+    .technologies img {
+      width: 55%;
+      margin: 30% auto;
+    }
+
+    .aptitudes
+    {
+      align-items: unset;
+    }
+
+    .aptitudes p 
+    {
+      font-size: 2.3em;
+      margin: 10% 0 0 10%;
+    }
+  }
+
+  @media (max-height: 678px)
+  {
+    .aptitudes p 
+    {
+      font-size: 1.5em;
+    }
+  }
+
+
+  
+
