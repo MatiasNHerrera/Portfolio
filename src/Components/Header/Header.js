@@ -1,16 +1,12 @@
 import React from 'react'
 import { Navbar } from '../Navbar/Navbar';
 import './Header.css';
+import pdf from '../../Assets/HerreraMatiasCV.pdf';
 
 export const Header = () => {
 
-    const openCv = () => {
-        window.open('https://filetools3.pdf24.org/client.php?mode=inline&file=joinPdf_3bdc6e850dc29d779df38551e80db7f8_13987367736377580410.pdf&action=getFile');
-    }
-
     return (
         <>
-            <Navbar />
             <div className="cnt-header" id="cnt-header">
                 <div className="h-left">
                     <div data-aos="fade-right" className="dev-information">
@@ -21,7 +17,7 @@ export const Header = () => {
                         </div>
                         <div className="cv">
                             <p>DOWNLOAD CV</p>
-                            <span href="#" className="glyphicon glyphicon-save" onClick={openCv}></span>
+                            <a href={pdf} download target="_blank" className="glyphicon glyphicon-save"></a>
                         </div>
                     </div>
                 </div>

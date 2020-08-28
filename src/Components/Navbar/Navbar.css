@@ -93,3 +93,21 @@ li:hover > a
     0%{width: 0%;}
     100%{width: 50%;}
 }
+
+@media (max-width: 500px) and (max-height: 812px)
+{
+    a
+    {
+        font-size: 0.8em;
+    }
+
+    .a-change
+    {
+        font-size: 0.9em;
+    }
+
+    .cnt-navbar
+    {
+        width: 511px;
+    }
+}

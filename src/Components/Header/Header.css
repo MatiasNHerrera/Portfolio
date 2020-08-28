@@ -100,7 +100,7 @@
     width: 50%;
 }
 
-.cv span
+.cv a
 {
     font-size: 2.5em;
     color: ghostwhite;
@@ -137,6 +137,7 @@
 
     .h-right
     {
+        background: linear-gradient(#020202 -4%, transparent), url('../../Assets/portfolio.png') no-repeat;
         background-size: cover;
         background-position-y: 0;
     }

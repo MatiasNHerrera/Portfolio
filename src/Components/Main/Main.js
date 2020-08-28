@@ -3,12 +3,14 @@ import { Header } from '../Header/Header';
 import './Main.css';
 import { Skills } from '../Skills/Skills';
 import AOS from 'aos';
-import { Proyects } from '../Proyects/Proyects';
+import { Projects } from '../Projects/Projects';
 import { Contact } from '../Contact/Contact';
+import { Navbar } from '../Navbar/Navbar';
+import { Footer } from '../Footer/Footer';
 
 export const Main = () => {
 
-    const changeNavStyle = ({target}) => {
+       const changeNavStyle = ({target}) => {
 
        if(target.scrollingElement.scrollTop > 40){
             document.querySelector('.cnt-navbar').classList.add('navbar-change');
@@ -54,10 +56,12 @@ export const Main = () => {
     return (
         <>
             <div className="main-cnt">
+                <Navbar />
                 <Header />
                 <Skills />
-                <Proyects />
+                <Projects />
                 <Contact />
+                <Footer />
             </div>
         </>
     )
