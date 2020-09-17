@@ -139,7 +139,7 @@ export const Contact = () => {
                     </div>
 
                     <div>
-                        <img src={whats}/>
+                        <img src={whats} onClick={() => open('https://api.whatsapp.com/send?phone=1161912991&text=&source=&data=&app_absent=')} />
                         <span>1161912991</span>
                     </div>
 
