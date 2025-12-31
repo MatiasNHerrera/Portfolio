@@ -13,7 +13,7 @@
     "pdfobject": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "sal.js": "^0.7.7"
   },
   "scripts": {
